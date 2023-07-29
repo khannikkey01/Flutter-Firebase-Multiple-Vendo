@@ -22,23 +22,16 @@ class LoginScreen extends StatelessWidget {
               labelText: 'Paswwrod',
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
           Container(
-            height: 40,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              color: Colors.yellow.shade900,
-              borderRadius: BorderRadius.circular(5),
-            ),
-            child: const Center(
-              child: Text(
-                'Log In',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 4,
-                ),
-              ),
+            width: MediaQuery.of(context).size.width - 200,
+            child: OutlinedButton(
+              onPressed: () {
+                print('Login with Terminal');
+              },
+              child: const Text("Login"),
             ),
           ),
           TextButton(
